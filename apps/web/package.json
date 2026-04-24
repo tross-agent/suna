@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--max-http-header-size=32768' next dev --turbopack --port 3000",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && NODE_OPTIONS='--max-http-header-size=32768' next dev --turbopack --port 3000",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "test:workspace-search": "node --experimental-strip-types --test src/features/files/search/workspace-search-core.test.mts",
     "test:e2e": "bash ./scripts/run-e2e.sh",
