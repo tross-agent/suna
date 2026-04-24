@@ -22,7 +22,7 @@
     "Dockerfile"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "node init && tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "lint": "tsc --noEmit",
     "test": "tsx test/e2e.test.ts",

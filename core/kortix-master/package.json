@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "bun run --watch src/index.ts",
-    "start": "bun run src/index.ts",
+    "dev": "node init && bun run --watch src/index.ts",
+    "start": "node init && bun run src/index.ts",
     "test": "bun test",
     "test:unit": "bun test tests/unit/",
     "test:integration": "bun test tests/integration/",
@@ -19,17 +19,14 @@
     "hono": "^4.0.0",
     "hono-openapi": "^1.2.0",
     "zod": "^4.3.6",
-
     "croner": "^8.1.2",
     "js-yaml": "^4.1.0",
-
     "@chat-adapter/discord": "^4.23.0",
     "@chat-adapter/slack": "^4.23.0",
     "@chat-adapter/state-memory": "^4.23.0",
     "@chat-adapter/telegram": "^4.23.0",
     "@hono/node-server": "^1.13.0",
     "chat": "^4.23.0",
-
     "@openauthjs/openauth": "^0.4.3",
     "@opencode-ai/plugin": "1.3.7",
     "@opencode-ai/sdk": "^1.2.25",
